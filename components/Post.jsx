@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Image, ScrollView } from "react-native";
+import { Image, ScrollView } from "react-native";
 import { connect } from "react-redux";
 import {addComment} from '../actions/index'
 import {

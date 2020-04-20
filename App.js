@@ -10,6 +10,7 @@ import store from "./store/index";
 import { Provider } from "react-redux";
 import Standalone from './components/Standalone';
 import Post from './components/Post';
+import SignIn from './components/SignIn';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -35,6 +36,7 @@ export default class App extends React.Component {
       <Provider store={store}>
         <NavigationContainer>
           <Stack.Navigator>
+            <Stack.Screen name="SignIn" component={SignIn}></Stack.Screen>
             <Stack.Screen name="Gallery" component={MainGallery}></Stack.Screen>
             <Stack.Screen name="Standalone" component={Standalone} />
             <Stack.Screen name="Post" component={Post}></Stack.Screen>

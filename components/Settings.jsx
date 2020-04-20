@@ -18,8 +18,7 @@ import {changeInfo} from '../actions/index'
 
 class Settings extends Component {
   state = {
-    image:
-    this.props.userPhoto,
+    image: this.props.userPhoto,
     name: this.props.userName,
     info: this.props.userInfo
   };
