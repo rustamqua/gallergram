@@ -54,9 +54,8 @@ class Standalone extends Component {
     let showChoosenLocation = undefined;
     if (this.state.showChoosenLocation) {
       showChoosenLocation = (
-        <View>
-          <Text>{this.state.shownLocation[0].street}</Text>
-          <Text>{this.state.shownLocation[0].city}</Text>
+        <View style={{margin: 10}}>
+          <Text>{this.state.shownLocation[0].street} {this.state.shownLocation[0].city}</Text>
         </View>
       );
     }
@@ -100,7 +99,6 @@ class Standalone extends Component {
     return (
       <Container>
         {showMap}
-        <Header />
         <Content>
           <Form style={{ alignItems: "center" }}>
             <Thumbnail

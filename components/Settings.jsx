@@ -39,7 +39,6 @@ class Settings extends Component {
   render() {
     return (
       <Container>
-        <Header />
         <Content>
           <Form style={{ alignItems: "center" }}>
             <Thumbnail

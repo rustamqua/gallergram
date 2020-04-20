@@ -6,6 +6,7 @@ const initialState = {
         "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
       description: "redux for state management",
       comments: [],
+      likes: 0,
       id: 0,
       location: "Almaty Kazakhstan",
     },
@@ -31,7 +32,7 @@ export const rootReducer = (state = initialState, action) => {
         return copy;
     }
     else if(action.type === "ADD_COMMENT"){
-      const find = state.posts.lastIndexOf(state.filter(e => e.id === action.id)[0]);
+      const find = state.posts.lastIndexOf(state.posts.filter(e => e.id === action.id)[0]);
       const posts = [...state.posts]
       const comments = [...posts[find].comments]
       comments.push(action.comment)

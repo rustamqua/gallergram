@@ -32,13 +32,13 @@ export default class App extends React.Component {
     }
     const Stack = createStackNavigator();
     return (
-      <Provider store = {store}>
+      <Provider store={store}>
         <NavigationContainer>
           <Stack.Navigator>
             <Stack.Screen name="Gallery" component={MainGallery}></Stack.Screen>
-            <Stack.Screen name="Standalone" component={Standalone}/>
-            <Stack.Screen name="Settings" component={Settings}></Stack.Screen>
+            <Stack.Screen name="Standalone" component={Standalone} />
             <Stack.Screen name="Post" component={Post}></Stack.Screen>
+            <Stack.Screen name="Settings" component={Settings}></Stack.Screen>
           </Stack.Navigator>
         </NavigationContainer>
       </Provider>

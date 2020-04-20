@@ -4,7 +4,6 @@ import { ScrollView } from "react-native";
 import SingleGallery from "./SingleGallery";
 import { NavigatorFooter } from "./NavigatorFooter";
 import { connect } from "react-redux";
-import { addPost } from "../actions/index";
 
 class MainGallery extends Component {
   render() {
